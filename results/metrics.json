@@ -1,0 +1,675 @@
+{
+  "prevalence": 0.022,
+  "operating_recall": 0.95,
+  "temperature": 0.6933097269248694,
+  "selected_seed": 7,
+  "cnn_seed_mean_std": {
+    "accuracy": [
+      0.8084510199506837,
+      0.009799369197217848
+    ],
+    "balanced_accuracy": [
+      0.6977995345858395,
+      0.016012564875896078
+    ],
+    "macro_f1": [
+      0.6791460145027767,
+      0.015684279219084604
+    ],
+    "weighted_f1": [
+      0.8086097811937659,
+      0.009111582135870407
+    ],
+    "roc_auc": [
+      0.9784098268426461,
+      0.001956491703081099
+    ],
+    "recall": [
+      0.9598474652310452,
+      0.0031802258588510372
+    ],
+    "review_workload": [
+      0.1635225582135776,
+      0.010469591895331896
+    ],
+    "precision_at_prevalence": [
+      0.12950255939739355,
+      0.008588613741403356
+    ]
+  },
+  "multiclass_test": {
+    "SolarTriageNet (CNN)": {
+      "accuracy": 0.8154001344989913,
+      "balanced_accuracy": 0.7099519232767751,
+      "macro_f1": 0.6880923983300464,
+      "weighted_f1": 0.8148067893725006
+    },
+    "Random Forest": {
+      "accuracy": 0.6849361129791527,
+      "balanced_accuracy": 0.4033851374736363,
+      "macro_f1": 0.4412076044540359,
+      "weighted_f1": 0.6524749087203687
+    },
+    "Logistic Regression": {
+      "accuracy": 0.32683254875588436,
+      "balanced_accuracy": 0.34273154270378847,
+      "macro_f1": 0.24770110473491425,
+      "weighted_f1": 0.36750693457001127
+    }
+  },
+  "per_class_test": {
+    "SolarTriageNet (CNN)": {
+      "No-Anomaly": {
+        "precision": 0.9342818428184282,
+        "recall": 0.926747311827957,
+        "f1-score": 0.9304993252361673,
+        "support": 1488.0
+      },
+      "Cell": {
+        "precision": 0.6914498141263941,
+        "recall": 0.6619217081850534,
+        "f1-score": 0.6763636363636364,
+        "support": 281.0
+      },
+      "Cell-Multi": {
+        "precision": 0.6241610738255033,
+        "recall": 0.4869109947643979,
+        "f1-score": 0.5470588235294118,
+        "support": 191.0
+      },
+      "Cracking": {
+        "precision": 0.6762589928057554,
+        "recall": 0.6762589928057554,
+        "f1-score": 0.6762589928057554,
+        "support": 139.0
+      },
+      "Hot-Spot": {
+        "precision": 0.6578947368421053,
+        "recall": 0.6756756756756757,
+        "f1-score": 0.6666666666666666,
+        "support": 37.0
+      },
+      "Hot-Spot-Multi": {
+        "precision": 0.47368421052631576,
+        "recall": 0.7297297297297297,
+        "f1-score": 0.574468085106383,
+        "support": 37.0
+      },
+      "Shadowing": {
+        "precision": 0.7080745341614907,
+        "recall": 0.7215189873417721,
+        "f1-score": 0.7147335423197492,
+        "support": 158.0
+      },
+      "Diode": {
+        "precision": 0.9551569506726457,
+        "recall": 0.9508928571428571,
+        "f1-score": 0.9530201342281879,
+        "support": 224.0
+      },
+      "Diode-Multi": {
+        "precision": 0.7352941176470589,
+        "recall": 0.9615384615384616,
+        "f1-score": 0.8333333333333334,
+        "support": 26.0
+      },
+      "Vegetation": {
+        "precision": 0.6593406593406593,
+        "recall": 0.7346938775510204,
+        "f1-score": 0.694980694980695,
+        "support": 245.0
+      },
+      "Soiling": {
+        "precision": 0.38461538461538464,
+        "recall": 0.3125,
+        "f1-score": 0.3448275862068966,
+        "support": 32.0
+      },
+      "Offline-Module": {
+        "precision": 0.6124031007751938,
+        "recall": 0.6810344827586207,
+        "f1-score": 0.6448979591836734,
+        "support": 116.0
+      }
+    },
+    "Random Forest": {
+      "No-Anomaly": {
+        "precision": 0.7409353652128219,
+        "recall": 0.9475806451612904,
+        "f1-score": 0.8316130934827485,
+        "support": 1488.0
+      },
+      "Cell": {
+        "precision": 0.4968152866242038,
+        "recall": 0.2775800711743772,
+        "f1-score": 0.3561643835616438,
+        "support": 281.0
+      },
+      "Cell-Multi": {
+        "precision": 0.42574257425742573,
+        "recall": 0.225130890052356,
+        "f1-score": 0.2945205479452055,
+        "support": 191.0
+      },
+      "Cracking": {
+        "precision": 0.5632911392405063,
+        "recall": 0.6402877697841727,
+        "f1-score": 0.5993265993265994,
+        "support": 139.0
+      },
+      "Hot-Spot": {
+        "precision": 0.5,
+        "recall": 0.05405405405405406,
+        "f1-score": 0.0975609756097561,
+        "support": 37.0
+      },
+      "Hot-Spot-Multi": {
+        "precision": 0.3055555555555556,
+        "recall": 0.2972972972972973,
+        "f1-score": 0.3013698630136986,
+        "support": 37.0
+      },
+      "Shadowing": {
+        "precision": 0.6666666666666666,
+        "recall": 0.35443037974683544,
+        "f1-score": 0.4628099173553719,
+        "support": 158.0
+      },
+      "Diode": {
+        "precision": 0.8140703517587939,
+        "recall": 0.7232142857142857,
+        "f1-score": 0.7659574468085106,
+        "support": 224.0
+      },
+      "Diode-Multi": {
+        "precision": 0.625,
+        "recall": 0.19230769230769232,
+        "f1-score": 0.29411764705882354,
+        "support": 26.0
+      },
+      "Vegetation": {
+        "precision": 0.5605381165919282,
+        "recall": 0.5102040816326531,
+        "f1-score": 0.5341880341880342,
+        "support": 245.0
+      },
+      "Soiling": {
+        "precision": 0.46153846153846156,
+        "recall": 0.1875,
+        "f1-score": 0.26666666666666666,
+        "support": 32.0
+      },
+      "Offline-Module": {
+        "precision": 0.5681818181818182,
+        "recall": 0.43103448275862066,
+        "f1-score": 0.49019607843137253,
+        "support": 116.0
+      }
+    }
+  },
+  "binary_test": {
+    "SolarTriageNet (CNN)": {
+      "roc_auc": 0.9792598300988438,
+      "ap_dataset_prevalence": 0.9820823367787602,
+      "ap_real_prevalence": 0.7954063890320269
+    },
+    "Random Forest": {
+      "roc_auc": 0.9068410903196863,
+      "ap_dataset_prevalence": 0.9180317796579609,
+      "ap_real_prevalence": 0.5056485045552155
+    },
+    "Logistic Regression": {
+      "roc_auc": 0.7749483530875989,
+      "ap_dataset_prevalence": 0.7909681023751204,
+      "ap_real_prevalence": 0.15850052736184445
+    },
+    "Hot-spot rule": {
+      "roc_auc": 0.8232877375215271,
+      "ap_dataset_prevalence": 0.847964318988251,
+      "ap_real_prevalence": 0.3498358269044196
+    }
+  },
+  "operating_points_test": [
+    {
+      "model": "SolarTriageNet (CNN)",
+      "target_recall_on_val": 0.9,
+      "threshold": 0.7868372201919556,
+      "recall": 0.9078061911170928,
+      "fpr": 0.038306451612903226,
+      "review_workload": 0.057435445881995395,
+      "precision_at_prevalence": 0.3477249266177751,
+      "missed_per_10k": 20.28263795423958,
+      "false_alarms_per_10k": 374.63709677419354,
+      "workload_reduction_vs_manual": 0.9425645541180045
+    },
+    {
+      "model": "SolarTriageNet (CNN)",
+      "target_recall_on_val": 0.95,
+      "threshold": 0.3925893306732178,
+      "recall": 0.9609690444145357,
+      "fpr": 0.14919354838709678,
+      "review_workload": 0.16705260929970045,
+      "precision_at_prevalence": 0.12655485637576147,
+      "missed_per_10k": 8.58681022880215,
+      "false_alarms_per_10k": 1459.1129032258066,
+      "workload_reduction_vs_manual": 0.8329473907002996
+    },
+    {
+      "model": "SolarTriageNet (CNN)",
+      "target_recall_on_val": 0.98,
+      "threshold": 0.16804885864257812,
+      "recall": 0.9858681022880216,
+      "fpr": 0.35013440860215056,
+      "review_workload": 0.3641205498632397,
+      "precision_at_prevalence": 0.059565707726418345,
+      "missed_per_10k": 3.1090174966352535,
+      "false_alarms_per_10k": 3424.3145161290327,
+      "workload_reduction_vs_manual": 0.6358794501367603
+    },
+    {
+      "model": "SolarTriageNet (CNN)",
+      "target_recall_on_val": 0.99,
+      "threshold": 0.11369287967681885,
+      "recall": 0.9925975773889637,
+      "fpr": 0.4798387096774194,
+      "review_workload": 0.49111940476707333,
+      "precision_at_prevalence": 0.044464027465813655,
+      "missed_per_10k": 1.6285329744279853,
+      "false_alarms_per_10k": 4692.822580645162,
+      "workload_reduction_vs_manual": 0.5088805952329267
+    },
+    {
+      "model": "Random Forest",
+      "target_recall_on_val": 0.9,
+      "threshold": 0.5509482086635302,
+      "recall": 0.9064602960969045,
+      "fpr": 0.3346774193548387,
+      "review_workload": 0.34725664264316414,
+      "precision_at_prevalence": 0.057427631512938795,
+      "missed_per_10k": 20.578734858681013,
+      "false_alarms_per_10k": 3273.1451612903224,
+      "workload_reduction_vs_manual": 0.6527433573568359
+    },
+    {
+      "model": "Random Forest",
+      "target_recall_on_val": 0.95,
+      "threshold": 0.4679655667344622,
+      "recall": 0.9549125168236877,
+      "fpr": 0.46841397849462363,
+      "review_workload": 0.479116946337863,
+      "precision_at_prevalence": 0.043847489700993975,
+      "missed_per_10k": 9.919246298788702,
+      "false_alarms_per_10k": 4581.0887096774195,
+      "workload_reduction_vs_manual": 0.5208830536621369
+    },
+    {
+      "model": "Random Forest",
+      "target_recall_on_val": 0.98,
+      "threshold": 0.4006671942017951,
+      "recall": 0.9730820995962315,
+      "fpr": 0.5866935483870968,
+      "review_workload": 0.5951940965136977,
+      "precision_at_prevalence": 0.03596777306178207,
+      "missed_per_10k": 5.921938088829073,
+      "false_alarms_per_10k": 5737.862903225806,
+      "workload_reduction_vs_manual": 0.4048059034863023
+    },
+    {
+      "model": "Random Forest",
+      "target_recall_on_val": 0.99,
+      "threshold": 0.3225288692540612,
+      "recall": 0.9892328398384926,
+      "fpr": 0.7143817204301075,
+      "review_workload": 0.720428445057092,
+      "precision_at_prevalence": 0.03020858299774958,
+      "missed_per_10k": 2.3687752355316194,
+      "false_alarms_per_10k": 6986.653225806452,
+      "workload_reduction_vs_manual": 0.279571554942908
+    },
+    {
+      "model": "Logistic Regression",
+      "target_recall_on_val": 0.9,
+      "threshold": 0.8201940352119562,
+      "recall": 0.8943472409152086,
+      "fpr": 0.6061827956989247,
+      "review_workload": 0.612522413493683,
+      "precision_at_prevalence": 0.032122317268211284,
+      "missed_per_10k": 23.243606998654116,
+      "false_alarms_per_10k": 5928.467741935484,
+      "workload_reduction_vs_manual": 0.38747758650631703
+    },
+    {
+      "model": "Logistic Regression",
+      "target_recall_on_val": 0.95,
+      "threshold": 0.77090852592004,
+      "recall": 0.9387617765814267,
+      "fpr": 0.7298387096774194,
+      "review_workload": 0.7344350171493075,
+      "precision_at_prevalence": 0.028120607817631833,
+      "missed_per_10k": 13.472409152086131,
+      "false_alarms_per_10k": 7137.822580645162,
+      "workload_reduction_vs_manual": 0.2655649828506925
+    },
+    {
+      "model": "Logistic Regression",
+      "target_recall_on_val": 0.98,
+      "threshold": 0.7084360129502774,
+      "recall": 0.9650067294751009,
+      "fpr": 0.8440860215053764,
+      "review_workload": 0.8467462770807104,
+      "precision_at_prevalence": 0.025072620480418834,
+      "missed_per_10k": 7.6985195154778,
+      "false_alarms_per_10k": 8255.161290322581,
+      "workload_reduction_vs_manual": 0.15325372291928963
+    },
+    {
+      "model": "Logistic Regression",
+      "target_recall_on_val": 0.99,
+      "threshold": 0.6623770283473849,
+      "recall": 0.9831763122476447,
+      "fpr": 0.9106182795698925,
+      "review_workload": 0.9122145562888031,
+      "precision_at_prevalence": 0.023711394123599423,
+      "missed_per_10k": 3.7012113055181706,
+      "false_alarms_per_10k": 8905.84677419355,
+      "workload_reduction_vs_manual": 0.0877854437111969
+    },
+    {
+      "model": "Hot-spot rule",
+      "target_recall_on_val": 0.9,
+      "threshold": 14.0,
+      "recall": 0.923956931359354,
+      "fpr": 0.616263440860215,
+      "review_workload": 0.623032697651196,
+      "precision_at_prevalence": 0.03262598025198007,
+      "missed_per_10k": 16.729475100942125,
+      "false_alarms_per_10k": 6027.0564516129025,
+      "workload_reduction_vs_manual": 0.37696730234880405
+    },
+    {
+      "model": "Hot-spot rule",
+      "target_recall_on_val": 0.95,
+      "threshold": 12.0,
+      "recall": 0.955585464333782,
+      "fpr": 0.7365591397849462,
+      "review_workload": 0.7413777189250206,
+      "precision_at_prevalence": 0.028356503950274982,
+      "missed_per_10k": 9.771197846567961,
+      "false_alarms_per_10k": 7203.548387096775,
+      "workload_reduction_vs_manual": 0.2586222810749794
+    },
+    {
+      "model": "Hot-spot rule",
+      "target_recall_on_val": 0.98,
+      "threshold": 10.0,
+      "recall": 0.9818304172274562,
+      "fpr": 0.8400537634408602,
+      "review_workload": 0.8431728498241653,
+      "precision_at_prevalence": 0.02561784239555216,
+      "missed_per_10k": 3.997308209959629,
+      "false_alarms_per_10k": 8215.725806451614,
+      "workload_reduction_vs_manual": 0.1568271501758347
+    },
+    {
+      "model": "Hot-spot rule",
+      "target_recall_on_val": 0.99,
+      "threshold": 8.410003662109375,
+      "recall": 0.9912516823687753,
+      "fpr": 0.8971774193548387,
+      "review_workload": 0.8992470531411453,
+      "precision_at_prevalence": 0.024250885155461453,
+      "missed_per_10k": 1.9246298788694438,
+      "false_alarms_per_10k": 8774.395161290324,
+      "workload_reduction_vs_manual": 0.10075294685885472
+    }
+  ],
+  "bootstrap_95ci": {
+    "cnn_macro_f1": [
+      0.6618931835897612,
+      0.7148941702791141
+    ],
+    "rf_macro_f1": [
+      0.4094910477084802,
+      0.47127588260754044
+    ],
+    "diff_macro_f1_cnn_minus_rf": [
+      0.2138345761109275,
+      0.28133110679534584
+    ],
+    "cnn_roc_auc": [
+      0.9750607880088712,
+      0.9834996142310309
+    ],
+    "cnn_recall_at_op": [
+      0.9508748317631225,
+      0.9703903095558546
+    ],
+    "cnn_workload_at_op": [
+      0.14903186555702685,
+      0.18484410194069376
+    ],
+    "rf_workload_at_op": [
+      0.456826060435028,
+      0.5041234728433118
+    ],
+    "diff_workload_cnn_minus_rf": [
+      -0.3405490227336865,
+      -0.28755258542091783
+    ]
+  },
+  "flag_rate_by_class_at_op": {
+    "No-Anomaly": {
+      "n": 1488,
+      "cnn_flagged": 0.14919354838709678,
+      "rf_flagged": 0.46841397849462363
+    },
+    "Cell": {
+      "n": 281,
+      "cnn_flagged": 0.9893238434163701,
+      "rf_flagged": 0.9430604982206405
+    },
+    "Cell-Multi": {
+      "n": 191,
+      "cnn_flagged": 0.9842931937172775,
+      "rf_flagged": 0.9685863874345549
+    },
+    "Cracking": {
+      "n": 139,
+      "cnn_flagged": 0.9928057553956835,
+      "rf_flagged": 0.9928057553956835
+    },
+    "Hot-Spot": {
+      "n": 37,
+      "cnn_flagged": 0.918918918918919,
+      "rf_flagged": 0.7027027027027027
+    },
+    "Hot-Spot-Multi": {
+      "n": 37,
+      "cnn_flagged": 0.9459459459459459,
+      "rf_flagged": 1.0
+    },
+    "Shadowing": {
+      "n": 158,
+      "cnn_flagged": 0.8987341772151899,
+      "rf_flagged": 0.9113924050632911
+    },
+    "Diode": {
+      "n": 224,
+      "cnn_flagged": 0.9866071428571429,
+      "rf_flagged": 0.9821428571428571
+    },
+    "Diode-Multi": {
+      "n": 26,
+      "cnn_flagged": 1.0,
+      "rf_flagged": 1.0
+    },
+    "Vegetation": {
+      "n": 245,
+      "cnn_flagged": 0.9510204081632653,
+      "rf_flagged": 0.9714285714285714
+    },
+    "Soiling": {
+      "n": 32,
+      "cnn_flagged": 1.0,
+      "rf_flagged": 1.0
+    },
+    "Offline-Module": {
+      "n": 116,
+      "cnn_flagged": 0.8706896551724138,
+      "rf_flagged": 0.9310344827586207
+    }
+  },
+  "calibration": {
+    "ece_before": 0.14994049776237767,
+    "ece_after": 0.029936510540930775
+  },
+  "top_confusions": [
+    [
+      "Cell",
+      "Vegetation",
+      40
+    ],
+    [
+      "Cell-Multi",
+      "Cell",
+      35
+    ],
+    [
+      "No-Anomaly",
+      "Offline-Module",
+      34
+    ],
+    [
+      "Cell-Multi",
+      "Cracking",
+      27
+    ],
+    [
+      "Shadowing",
+      "No-Anomaly",
+      26
+    ],
+    [
+      "No-Anomaly",
+      "Shadowing",
+      24
+    ],
+    [
+      "Offline-Module",
+      "No-Anomaly",
+      23
+    ],
+    [
+      "Vegetation",
+      "Cell",
+      22
+    ],
+    [
+      "Cell",
+      "Cell-Multi",
+      20
+    ],
+    [
+      "No-Anomaly",
+      "Vegetation",
+      18
+    ]
+  ],
+  "efficiency": {
+    "parameters": 299148,
+    "model_file_mb": 1.221739,
+    "cpu_ms_per_image_batch1": 1.1964689998421818,
+    "cpu_ms_per_image_batch512": 0.3700233984091028,
+    "cpu_threads": 14
+  },
+  "open_set": {
+    "Cell-Multi": {
+      "n_images": 1286,
+      "cnn_recall_unseen": 0.9914463452566097,
+      "cnn_fpr_test_normal": 0.3071236559139785,
+      "cnn_best_epoch": 13,
+      "rf_recall_unseen": 0.9813374805598756,
+      "hotspot_recall": 0.994556765163297
+    },
+    "Cell": {
+      "n_images": 1876,
+      "cnn_recall_unseen": 0.9792110874200426,
+      "cnn_fpr_test_normal": 0.3192204301075269,
+      "cnn_best_epoch": 15,
+      "rf_recall_unseen": 0.9067164179104478,
+      "hotspot_recall": 0.9717484008528785
+    },
+    "Cracking": {
+      "n_images": 937,
+      "cnn_recall_unseen": 0.9967982924226254,
+      "cnn_fpr_test_normal": 0.3030913978494624,
+      "cnn_best_epoch": 13,
+      "rf_recall_unseen": 0.9893276414087513,
+      "hotspot_recall": 0.9989327641408752
+    },
+    "Diode-Multi": {
+      "n_images": 175,
+      "cnn_recall_unseen": 0.9657142857142857,
+      "cnn_fpr_test_normal": 0.2970430107526882,
+      "cnn_best_epoch": 15,
+      "rf_recall_unseen": 0.9828571428571429,
+      "hotspot_recall": 0.9942857142857143
+    },
+    "Diode": {
+      "n_images": 1496,
+      "cnn_recall_unseen": 0.9518716577540107,
+      "cnn_fpr_test_normal": 0.34274193548387094,
+      "cnn_best_epoch": 13,
+      "rf_recall_unseen": 0.945855614973262,
+      "hotspot_recall": 0.9919786096256684
+    },
+    "Hot-Spot-Multi": {
+      "n_images": 246,
+      "cnn_recall_unseen": 0.9878048780487805,
+      "cnn_fpr_test_normal": 0.3131720430107527,
+      "cnn_best_epoch": 13,
+      "rf_recall_unseen": 0.9390243902439024,
+      "hotspot_recall": 0.9878048780487805
+    },
+    "Hot-Spot": {
+      "n_images": 248,
+      "cnn_recall_unseen": 0.8548387096774194,
+      "cnn_fpr_test_normal": 0.25336021505376344,
+      "cnn_best_epoch": 14,
+      "rf_recall_unseen": 0.6733870967741935,
+      "hotspot_recall": 0.9314516129032258
+    },
+    "Offline-Module": {
+      "n_images": 821,
+      "cnn_recall_unseen": 0.4628501827040195,
+      "cnn_fpr_test_normal": 0.15524193548387097,
+      "cnn_best_epoch": 14,
+      "rf_recall_unseen": 0.8319123020706456,
+      "hotspot_recall": 0.902557856272838
+    },
+    "Shadowing": {
+      "n_images": 1045,
+      "cnn_recall_unseen": 0.6593301435406699,
+      "cnn_fpr_test_normal": 0.20026881720430106,
+      "cnn_best_epoch": 14,
+      "rf_recall_unseen": 0.6708133971291866,
+      "hotspot_recall": 0.8354066985645933
+    },
+    "Soiling": {
+      "n_images": 204,
+      "cnn_recall_unseen": 1.0,
+      "cnn_fpr_test_normal": 0.3245967741935484,
+      "cnn_best_epoch": 14,
+      "rf_recall_unseen": 0.9705882352941176,
+      "hotspot_recall": 0.9852941176470589
+    },
+    "Vegetation": {
+      "n_images": 1638,
+      "cnn_recall_unseen": 0.931013431013431,
+      "cnn_fpr_test_normal": 0.3131720430107527,
+      "cnn_best_epoch": 14,
+      "rf_recall_unseen": 0.9377289377289377,
+      "hotspot_recall": 0.9633699633699634
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "n_images": 246,
+  "cnn_recall_unseen": 0.9878048780487805,
+  "cnn_fpr_test_normal": 0.3131720430107527,
+  "cnn_best_epoch": 13,
+  "rf_recall_unseen": 0.9390243902439024,
+  "hotspot_recall": 0.9878048780487805
+}

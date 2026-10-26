@@ -1,0 +1,10 @@
+{
+  "logistic_regression": {
+    "C": 0.1,
+    "val_macro_f1": 0.23671597562806515
+  },
+  "random_forest": {
+    "min_samples_leaf": 3,
+    "val_macro_f1": 0.4331775541487933
+  }
+}

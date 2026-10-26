@@ -1,0 +1,6 @@
+{
+  "name": "solartriage-report-tools",
+  "private": true,
+  "description": "Builds report/SolarTriage_Report.docx from the Markdown source (node md2docx.js in.md out.docx)",
+  "dependencies": { "docx": "^9.0.0" }
+}

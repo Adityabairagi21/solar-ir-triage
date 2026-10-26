@@ -1,0 +1,55 @@
+﻿# All experiment settings in one place. Scripts read this file; nothing is hard-coded elsewhere.
+seed: 42
+
+data:
+  url: https://github.com/RaptorMaps/InfraredSolarModules/raw/master/2020-02-14_InfraredSolarModules.zip
+  sha256: b82c706bc719b045ac4f8930570d81767a8a170d0998ca3e09283b585db05b5e
+  raw_dir: data/raw
+  processed_dir: data/processed
+  # Near-duplicate rule: two images are "the same module crop" if their 64-bit
+  # difference hash differs in at most this many bits AND their mean absolute
+  # pixel difference is at most `near_dup_max_mad` grey levels.
+  near_dup_max_hamming: 4
+  near_dup_max_mad: 3.0
+  # Group-aware stratified split (fractions of the de-duplicated data)
+  n_split_folds: 20      # 20 folds -> 3 test, 3 validation, 14 train  = 15 / 15 / 70 %
+  test_folds: 3
+  val_folds: 3
+
+# Deployment assumption from the dataset paper (Millendorf et al., 2020, citing the
+# Raptor Maps 2020 global aerial-inspection report): 2.2 % of modules are anomalous.
+real_world_prevalence: 0.022
+
+triage:
+  target_recall: 0.95    # operating point chosen on the VALIDATION set
+  extra_recalls: [0.90, 0.98, 0.99]
+
+model:
+  channels: [32, 64, 128]
+  dropout: 0.3
+
+train:
+  batch_size: 128
+  max_epochs: 40
+  patience: 8            # early stopping on validation macro-F1
+  lr: 0.002
+  weight_decay: 0.0001
+  class_weight_power: 0.5   # weight_c = (N / (K * n_c)) ** power ; 0.5 = sqrt inverse frequency
+  label_smoothing: 0.05
+  num_threads: 0            # 0 = let PyTorch decide
+  seeds: [42, 7, 2024]
+
+augment:
+  hflip: true
+  vflip: true
+  max_shift_px: 2
+  brightness: 0.10       # +/- fraction of the intensity range
+  contrast: 0.10
+
+open_set:
+  max_epochs: 15   # shorter budget than the main model (40) to fit CPU time; see report
+  patience: 4
+  seed: 42
+
+bootstrap:
+  n_resamples: 1000
